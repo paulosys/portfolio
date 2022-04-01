@@ -158,7 +158,11 @@ header{
 }
 
 .button-contact > a{
-    color: var(--yellow);
+    color: var(--yellow);;
+}
+
+.button-contact i{
+    margin-left: 8px;
 }
 
 .button-contact:hover{
@@ -175,7 +179,6 @@ header{
     bottom: 10px;
     background-color: var(--black2);
 }
-
 
 /* ================================================ */
 
