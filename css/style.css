@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;700&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -19,40 +21,50 @@ h1, h2, h3, p, a, a:visited{
 }
 
 body{
-    height: 100vh;
+    height: 100%;
     display: grid;
-    grid-template-columns: 1fr 3fr;
+    grid-template-columns: 1fr 4fr;
     background-color: var(--graphite);
-}
-
-header{
-    background-color: var(--black);
+    font-family: 'Open Sans', sans-serif;
 }
 
 .content{
-    width: 80%;
+    height: 100vh;
+    width: 100%;
+    padding: 0px 10%;    
 }
 
 /* ================== header ====================== */
 
+header{
+    font-family: 'Montserrat', sans-serif;
+}
+
 .nav-container{
-    height: 100vh;
+    height: 100%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-size: 18px;
     
+    background-color: var(--black);
+}
+
+.nav-wrapper{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
 }
 
 .navegation-menu{
     min-width: 200px;
-    position: fixed;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 32px;
+    gap: 84px;
 
 }
 
@@ -70,7 +82,7 @@ header{
 
 #line-nav{
     height: 1px;
-    width: 90%;
+    width: 100%;
     background-color: var(--light-gray);
 }
 
@@ -78,7 +90,7 @@ header{
     font-size: 24px;
     min-width: 80px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 .socials li:hover{
@@ -91,21 +103,12 @@ header{
 
 /* ================== Home ====================== */
 
-.home{
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .home-container{
+    height: 100%;
     display: flex;
     flex-direction: row;
-}
-
-.photo-wrapper{
-    width: 50%;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .photo{
@@ -118,7 +121,7 @@ header{
     
 }
 
-.photo img {
+.photo > img {
     width: 100%;
     object-fit: contain;
     animation: morphing 10s  infinite;
@@ -129,12 +132,18 @@ header{
     width: 40%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     gap: 16px;
-    
 }
 
-.sub-title span{
+.home-text .title{
+    font-size: 2rem;
+}
+
+.home .sub-title{
+    font-size: 1rem;
+}
+
+.home .sub-title > span{
     color: var(--yellow);
 }
 
@@ -144,17 +153,18 @@ header{
     padding: 16px 32px;
     border-radius: 4px;
     background: linear-gradient(to right bottom, #212428, #16181c);
-    
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+    font-weight: bold;
 }
 
-.button-contact a{
+.button-contact > a{
     color: var(--yellow);
 }
 
 .button-contact:hover{
     transform: translateY(-5px);
     box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
-    background: #000000;
+    background: #09090a;
     transition: 300ms;
 }
 
