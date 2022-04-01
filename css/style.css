@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    --black : #000000;
+    --black2: #212428;
+    --white : #fff;
+    --graphite : #111111;
+    --light-gray : #A0A0A0;
+    --ligh-gray2: #EEE;
+    --yellow: #d19508;
+    --pink: #FF014F;
+}
+
+h1, h2, h3, p, a, a:visited{
+    color: var(--light-gray);
+    text-decoration: none;
+}
+
+body{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    background-color: var(--graphite);
+}
+
+header{
+    background-color: var(--black);
+}
+
+.content{
+    width: 80%;
+}
+
+/* ================== header ====================== */
+
+.nav-container{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    
+}
+
+.navegation-menu{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.list-navegation{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+
+#line-nav{
+    height: 1px;
+    min-width: 150px;
+    background-color: var(--light-gray);
+}
+
+.socials ul{
+    font-size: 24px;
+    min-width: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* ================================================ */
+
+/* ================== Home ====================== */
+
+.home{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-container{
+    display: flex;
+    flex-direction: row;
+}
+
+.photo-wrapper{
+    width: 50%;
+}
+
+.photo{
+    display: flex;
+    justify-content: center;
+    width: 250px;
+    height: 300px;
+    background-color: var(--ligh-gray2);
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;;
+    
+}
+
+.photo img {
+    width: 100%;
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;;
+    object-fit: contain;
+}
+
+.home-text{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 16px;
+    
+}
+
+.sub-title span{
+    color: var(--yellow);
+}
+
+.button-contact{
+    margin-top: 16px;
+    align-self: center;
+    padding: 16px 32px;
+    border-radius: 4px;
+    background: linear-gradient(to right bottom, #212428, #16181c);
+    
+}
+
+.button-contact a{
+    color: var(--yellow);
+}
+
+.line{
+    position: absolute;
+    height: 1px;
+    width: 70vw;
+    bottom: 10px;
+    background-color: var(--black2);
+}
+
+/* ================================================ */
