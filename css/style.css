@@ -147,7 +147,7 @@ header{
     color: var(--yellow);
 }
 
-.button-contact{
+.button-cv{
     margin-top: 16px;
     align-self: center;
     padding: 16px 32px;
@@ -157,15 +157,15 @@ header{
     font-weight: bold;
 }
 
-.button-contact > a{
+.button-cv > a{
     color: var(--yellow);;
 }
 
-.button-contact i{
-    margin-left: 8px;
+.button-cv i{
+    padding-left: 12px;
 }
 
-.button-contact:hover{
+.button-cv:hover{
     transform: translateY(-5px);
     box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
     background: #09090a;
