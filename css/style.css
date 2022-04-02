@@ -31,24 +31,32 @@ body{
 .content{
     height: 100vh;
     width: 100%;
-    padding: 0px 10%;    
+    padding: 5% 10%;    
+}
+
+.line{
+    position: absolute;
+    height: 1px;
+    width: 70vw;
+    bottom: 10px;
+    background-color: var(--black2);
 }
 
 /* ================== header ====================== */
 
 header{
+    height: 100%;
+    background-color: var(--black);
     font-family: 'Montserrat', sans-serif;
 }
 
 .nav-container{
-    height: 100%;
+    height: 100vh;
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
-    background-color: var(--black);
 }
 
 .nav-wrapper{
@@ -118,14 +126,12 @@ header{
     height: 300px;
     background-color: var(--ligh-gray2);
     animation: morphing 10s  infinite;
-    
 }
 
 .photo > img {
     width: 100%;
     object-fit: contain;
     animation: morphing 10s  infinite;
-    
 }
 
 .home-text{
@@ -172,12 +178,46 @@ header{
     transition: 300ms;
 }
 
-.line{
-    position: absolute;
-    height: 1px;
-    width: 70vw;
-    bottom: 10px;
-    background-color: var(--black2);
+/* ================================================ */
+
+/* ================== About ====================== */
+.about-container{
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+}
+
+.about-text{
+    display: flex;
+    text-align: justify;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.about-text h2{
+    font-size: 2rem;
+}
+.about-text span{
+    color: var(--yellow);
+}
+
+.stacks-wrapper ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style: none;
+    font-size: 48px;
+    color: white;
+}
+
+.stacks-wrapper img{
+    height: 48px;
+    width: 48px;
+}
+
+.stacks-wrapper img:hover{
+    transform: scale(1.2);
+    transition: 300ms;
 }
 
 /* ================================================ */
