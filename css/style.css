@@ -80,9 +80,10 @@ header{
     display: flex;
     flex-direction: column;
     gap: 24px;
+    list-style: none;
 }
 
-.list-navegation li:hover, .list-navegation li a:hover{
+.list-navegation li:hover, .list-navegation a:hover{
     transform: translateX(5px);
     color: var(--yellow);
     transition: 300ms;
